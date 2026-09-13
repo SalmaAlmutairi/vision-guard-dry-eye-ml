@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/header.png" alt="Vision Guard Banner" width="100%">
+</p>
+
 # Vision Guard: AI-Powered Dry Eye Prediction and Prevention
 
 An end-to-end machine learning project that explores whether **Dry Eye Disease (DED) risk can be predicted using lifestyle and behavioral data** without relying solely on clinical measurements.
