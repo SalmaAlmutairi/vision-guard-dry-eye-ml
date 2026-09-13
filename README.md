@@ -99,3 +99,35 @@ The preprocessing pipeline included:
 - Min-Max normalization
 - Stratified train/validation/test splitting
 - SMOTE applied to the training data to address class imbalance
+
+## Unsupervised Learning: Clustering
+
+Four clustering algorithms were evaluated:
+
+- K-Means
+- DBSCAN
+- Agglomerative Clustering
+- Gaussian Mixture Model (GMM)
+
+Feature selection was performed using a **K-Nearest Neighbors graph and Laplacian Score**.
+
+The six selected lifestyle features were:
+
+1. Sleep Duration
+2. Sleep Quality
+3. Stress Level
+4. Average Screen Time
+5. Smart Device Before Bed
+6. Blue-Light Filter Usage
+
+### Clustering Results
+
+DBSCAN and Agglomerative Clustering achieved the strongest clustering performance:
+
+| Metric | DBSCAN / Agglomerative | K-Means / GMM |
+|---|---:|---:|
+| Silhouette Score | **0.354** | ~0.302 |
+| Davies-Bouldin Index | **1.254** | ~1.466 |
+| Number of Clusters | 4 | 5 |
+
+DBSCAN cluster assignments were later incorporated as an additional feature for supervised classification.
