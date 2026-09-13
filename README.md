@@ -131,3 +131,39 @@ DBSCAN and Agglomerative Clustering achieved the strongest clustering performanc
 | Number of Clusters | 4 | 5 |
 
 DBSCAN cluster assignments were later incorporated as an additional feature for supervised classification.
+
+## Supervised Learning
+
+Three classification algorithms were evaluated:
+
+- Logistic Regression
+- XGBoost
+- LightGBM
+
+The dataset was split using a stratified:
+
+- **80% Training**
+- **10% Validation**
+- **10% Testing**
+
+Hyperparameter optimization was performed using **GridSearchCV with 5-fold cross-validation**.
+
+### Final Test Results
+
+| Model | Accuracy | Precision | Recall | F1 Score | AUC-ROC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 65.10% | 68.87% | 84.82% | 76.01% | 56.03% |
+| XGBoost | **70.20%** | 69.89% | 70.20% | 65.61% | **60.00%** |
+| LightGBM | 70.05% | **70.00%** | **93.40%** | **80.26%** | 59.71% |
+
+### Selected Model: LightGBM
+
+LightGBM was selected as the strongest model in the post-clustering pipeline because it achieved:
+
+- **93.40% Recall**
+- **80.26% F1 Score**
+- **70.05% Accuracy**
+
+Its high recall allowed the model to identify a large proportion of DED-positive cases.
+
+However, the AUC-ROC remained around **0.60**, indicating that overall class separation was still limited.
