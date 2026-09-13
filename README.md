@@ -130,8 +130,8 @@ DBSCAN and Agglomerative Clustering achieved the strongest clustering performanc
 | Number of Clusters | 4 | 5 |
 
 <p align="center">
-  <img src="images/clustering_kmeans_gmm.png" width="48%" alt="K-Means and GMM Clustering">
-  <img src="images/clustering_dbscan_agglomerative.png" width="48%" alt="DBSCAN and Agglomerative Clustering">
+  <img src="images/clustering_kmeans_gmm.jpg" width="48%" alt="K-Means and GMM Clustering">
+  <img src="images/clustering_dbscan_agglomerative.jpg" width="48%" alt="DBSCAN and Agglomerative Clustering">
 </p>
 
 <p align="center">
