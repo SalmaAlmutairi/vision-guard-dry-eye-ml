@@ -11,6 +11,30 @@ The project combines **supervised learning, unsupervised learning, representatio
 > **Note:** This project was developed for research and educational purposes and is not intended for medical diagnosis.
 
 ---
+<p align="center">
+  <img src="https://img.shields.io/badge/Dataset-20%2C000%20Records-6C63FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Features-26-8B5CF6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Clustering-4%20Algorithms-6366F1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Classification-3%20Models-A855F7?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/XGBoost-EB5B29?style=flat-square" />
+  <img src="https://img.shields.io/badge/LightGBM-02569B?style=flat-square" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
+</p>
+
+<p align="center">
+  <b>Machine Learning</b> •
+  <b>Unsupervised Learning</b> •
+  <b>Representation Learning</b> •
+  <b>Generative AI</b>
+</p>
+
+---
 
 ## Project Overview
 
