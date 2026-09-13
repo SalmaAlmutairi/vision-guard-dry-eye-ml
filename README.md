@@ -211,3 +211,139 @@ Although the Autoencoder successfully learned a compressed representation of the
 | F1 Score | 67.65% |
 
 This experiment showed that good reconstruction performance does not necessarily produce features that are useful for classification.
+
+## Generative AI Recommendations
+
+To extend the project beyond prediction, lifestyle profiles were generated for the clusters identified by DBSCAN.
+
+The average behavioral characteristics of each cluster were summarized and passed to **GPT through the OpenAI API**.
+
+The model generated personalized lifestyle recommendations related to areas such as:
+
+- Sleep habits
+- Stress management
+- Screen-time reduction
+- Smart-device usage
+- Blue-light exposure
+
+This demonstrated how **unsupervised learning and Generative AI** can be combined to transform analytical results into more interpretable, user-friendly recommendations.
+
+---
+
+## Key Findings
+
+The project produced several important findings:
+
+- Lifestyle data contains useful predictive information for DED risk.
+- LightGBM achieved the highest recall and F1 score in the proposed post-clustering pipeline.
+- DBSCAN and Agglomerative Clustering produced stronger cluster separation than K-Means and GMM.
+- Adding clustering information did not necessarily improve overall classification performance.
+- Autoencoder representations also did not improve classification performance.
+- Weak feature relationships and limited class separability were major challenges in the dataset.
+- Combining behavioral data with limited clinical information could improve future performance.
+
+---
+
+## Technologies
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--learn-orange)
+![XGBoost](https://img.shields.io/badge/XGBoost-Modeling-red)
+![LightGBM](https://img.shields.io/badge/LightGBM-Classification-green)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Autoencoder-orange)
+![OpenAI](https://img.shields.io/badge/OpenAI-API-black)
+
+**Core tools and libraries:**
+
+`Python` • `Pandas` • `NumPy` • `Scikit-learn` • `XGBoost` • `LightGBM` • `TensorFlow/Keras` • `imbalanced-learn` • `Matplotlib` • `OpenAI API`
+
+---
+
+## Repository Structure
+
+```text
+vision-guard-dry-eye-ml/
+│
+├── data/
+│   └── Dry_Eye_Dataset.csv
+│
+├── report/
+│   └── Ml_DED_Final_Report.pdf
+│
+├── clustering_and_classification_01.ipynb
+├── autoencoder_classification_02.ipynb
+│
+├── README.md
+└── .gitignore
+```
+
+## Project Notebooks
+
+### 1. Clustering & Classification
+
+[`clustering_and_classification_01.ipynb`](clustering_and_classification_01.ipynb)
+
+Includes:
+
+- Exploratory Data Analysis
+- Data preprocessing
+- Feature selection
+- K-Means
+- DBSCAN
+- Agglomerative Clustering
+- Gaussian Mixture Models
+- Logistic Regression
+- XGBoost
+- LightGBM
+- GPT-powered recommendations
+
+### 2. Autoencoder & Classification
+
+[`autoencoder_classification_02.ipynb`](autoencoder_classification_02.ipynb)
+
+Includes:
+
+- Autoencoder architecture
+- Latent feature extraction
+- Reconstruction analysis
+- Logistic Regression
+- XGBoost
+- LightGBM
+- Evaluation of reconstructed features
+
+---
+
+## Full Project Report
+
+For a detailed description of the methodology, experiments, and results, see the full project report:
+
+📄 [View Full Project Report](report/Ml_DED_Final_Report.pdf)
+
+---
+
+## Future Improvements
+
+Future work could explore:
+
+- Combining lifestyle and selected clinical features
+- More advanced representation-learning techniques
+- Longitudinal lifestyle data
+- Real-time behavioral monitoring
+- Mobile health integration
+- Improved personalized recommendation systems
+
+---
+
+## Team
+
+Developed as a team machine learning project by:
+
+**Alanoud Almakadi • Dana Alnemari • Nadine Alsahafi • Sarah Sadik • Salma Almutairi**
+
+---
+
+## Disclaimer
+
+This project is intended for **research and educational purposes only**.
+
+The predictions and generated recommendations should not be considered medical diagnoses or substitutes for professional healthcare advice.
