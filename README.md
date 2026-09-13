@@ -82,39 +82,10 @@ Dataset file:
 
 ## Machine Learning Pipeline
 
-```text
-Lifestyle Dataset
-       ↓
-Exploratory Data Analysis
-       ↓
-Data Preprocessing
-       ↓
-Encoding + Feature Engineering + Scaling
-       ↓
-Class Imbalance Handling (SMOTE)
-       ↓
- ┌─────────────────────────────┐
- │                             │
-Clustering                 Autoencoder
- │                             │
-DBSCAN / K-Means /         Latent Feature
-Agglomerative / GMM        Representation
- │                             │
- ↓                             ↓
-Supervised Classification Models
-       ↓
-Logistic Regression
-XGBoost
-LightGBM
-       ↓
-Model Evaluation
-       ↓
-Lifestyle Cluster Profiles
-       ↓
-OpenAI API
-       ↓
-Personalized Recommendations
-```
+<p align="center">
+  <img src="images/pipline.png" alt="Vision Guard Machine Learning Pipeline" width="90%">
+</p>
+
 ## Data Preprocessing
 
 The preprocessing pipeline included:
