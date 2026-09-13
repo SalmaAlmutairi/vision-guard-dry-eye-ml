@@ -164,6 +164,36 @@ Hyperparameter optimization was performed using **GridSearchCV with 5-fold cross
 | XGBoost | **70.20%** | 69.89% | 70.20% | 65.61% | **60.00%** |
 | LightGBM | 70.05% | **70.00%** | **93.40%** | **80.26%** | 59.71% |
 
+### Model Evaluation Visualizations
+
+#### Logistic Regression
+
+<p align="center">
+  <img src="images/logistic_confusion_matrix.png" width="43%" alt="Logistic Regression Confusion Matrix">
+  &nbsp;&nbsp;
+  <img src="images/logistic_roc_curve.png" width="50%" alt="Logistic Regression ROC Curve">
+</p>
+
+#### XGBoost
+
+<p align="center">
+  <img src="images/xgboost_confusion_matrix.png" width="43%" alt="XGBoost Confusion Matrix">
+  &nbsp;&nbsp;
+  <img src="images/xgboost_roc_curve.png" width="50%" alt="XGBoost ROC Curve">
+</p>
+
+#### LightGBM
+
+<p align="center">
+  <img src="images/lightgbm_confusion_matrix.png" width="43%" alt="LightGBM Confusion Matrix">
+  &nbsp;&nbsp;
+  <img src="images/lightgbm_roc_curve.png" width="50%" alt="LightGBM ROC Curve">
+</p>
+
+<p align="center">
+  <em>Confusion matrices and ROC curves for the final supervised classification models.</em>
+</p>
+
 ### Selected Model: LightGBM
 
 LightGBM was selected as the strongest model in the post-clustering pipeline because it achieved:
