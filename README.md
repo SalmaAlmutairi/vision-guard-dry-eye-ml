@@ -260,6 +260,10 @@ To extend the project beyond prediction, lifestyle profiles were generated for t
 
 The average behavioral characteristics of each cluster were summarized and passed to **GPT through the OpenAI API**.
 
+<p align="center">
+  <img src="images/generative_ai_pipeline.png" width="100%">
+</p>
+
 The model generated personalized lifestyle recommendations related to areas such as:
 
 - Sleep habits
