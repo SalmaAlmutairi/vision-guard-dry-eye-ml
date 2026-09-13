@@ -86,4 +86,16 @@ Lifestyle Cluster Profiles
 OpenAI API
        ↓
 Personalized Recommendations
+```
+## Data Preprocessing
 
+The preprocessing pipeline included:
+
+- Standardization of categorical values
+- Label encoding for categorical variables
+- Splitting the `Blood Pressure` feature into:
+  - `Systolic_BP`
+  - `Diastolic_BP`
+- Min-Max normalization
+- Stratified train/validation/test splitting
+- SMOTE applied to the training data to address class imbalance
