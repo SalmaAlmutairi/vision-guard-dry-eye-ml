@@ -227,6 +227,20 @@ The mean reconstruction error was approximately:
 
 **0.0981**
 
+### Reconstruction Performance
+
+<p align="center">
+  <img src="images/autoencoder_reconstruction_errors.jpg" width="70%">
+</p>
+
+The reconstruction errors were concentrated around the mean with no major outliers, indicating consistent reconstruction performance across the dataset.
+
+<p align="center">
+  <img src="images/autoencoder_training_loss.jpg" width="70%">
+</p>
+
+The training and validation loss curves showed smooth convergence without clear signs of overfitting.
+
 Although the Autoencoder successfully learned a compressed representation of the data, the latent features did not improve downstream classification performance.
 
 ### Full Reconstructed Dataset — LightGBM
