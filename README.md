@@ -212,19 +212,9 @@ An Autoencoder was explored as an alternative unsupervised representation-learni
 
 ### Architecture
 
-```text
-Input
-  ↓
-16 neurons
-  ↓
-12 neurons
-  ↓
-5-dimensional latent representation
-  ↓
-Decoder
-  ↓
-Reconstructed Input
-```
+<p align="center">
+  <img src="images/autoencoder_architecture.png" width="100%">
+</p>
 
 The Autoencoder was trained using:
 
