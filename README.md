@@ -167,3 +167,47 @@ LightGBM was selected as the strongest model in the post-clustering pipeline bec
 Its high recall allowed the model to identify a large proportion of DED-positive cases.
 
 However, the AUC-ROC remained around **0.60**, indicating that overall class separation was still limited.
+
+## Autoencoder Experiment
+
+An Autoencoder was explored as an alternative unsupervised representation-learning technique.
+
+### Architecture
+
+```text
+Input
+  ↓
+16 neurons
+  ↓
+12 neurons
+  ↓
+5-dimensional latent representation
+  ↓
+Decoder
+  ↓
+Reconstructed Input
+```
+
+The Autoencoder was trained using:
+
+- Mean Squared Error (MSE)
+- Up to 300 epochs
+- Early stopping
+- 8,000 stratified samples
+
+The mean reconstruction error was approximately:
+
+**0.0981**
+
+Although the Autoencoder successfully learned a compressed representation of the data, the latent features did not improve downstream classification performance.
+
+### Full Reconstructed Dataset — LightGBM
+
+| Metric | Result |
+|---|---:|
+| Accuracy | 58.45% |
+| Precision | 68.67% |
+| Recall | 66.67% |
+| F1 Score | 67.65% |
+
+This experiment showed that good reconstruction performance does not necessarily produce features that are useful for classification.
